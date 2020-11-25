@@ -8,7 +8,8 @@ import { TrackComponent } from './track/track.component';
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'search', component: SearchComponent },
-  { path: 'tracks/:id', component: TrackComponent }
+  { path: 'tracks/:id', component: TrackComponent },
+  { path: '',   redirectTo: '/search', pathMatch: 'full' }
 ];
 
 
